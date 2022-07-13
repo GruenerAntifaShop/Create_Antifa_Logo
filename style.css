@@ -1,0 +1,41 @@
+
+#image_field{
+  min-width: 500px;
+  min-height: 500px;
+  border-style: dotted;
+  height: 500px;
+  width: 500px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position: relative;
+}
+
+#circle_out {
+   width: 500px;
+   height: 500px;
+   border-radius: 250px;
+   background: black;
+   z-index: 0;
+   position: relative;
+ }
+
+ #circle_in {
+    width: 385px ;
+    height: 385px ;
+    border-radius: 250px;
+    background: white;
+    z-index: 1;
+    position: absolute;
+  }
+
+.text_circle{
+  position: absolute;
+  color: white;
+  z-index: 2;
+  font-size:40px;
+  font-weight:bold;
+}
+
+#controll_field{
+}

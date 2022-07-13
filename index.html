@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>Antifa Image generate by GruenerAntifaShop.de</title>
+<link rel="stylesheet" href="style.css">
+ <script src="circletype.min.js"></script> <!--https://github.com/peterhry/CircleType/-->
+</head>
+
+<body>
+
+  <div id="image_field" height="500" width="500">
+    <div id="circle_out"></div>
+    <div id="circle_in"></div>
+    <div id="upper_text" class="text_circle">ANTIFASCHISTISCHE</div>
+    <div id="down_text" class="text_circle">AKTION</div>
+</div>
+
+
+
+  <div id="controll_field">
+  <label for="colorpicker">Set outer Circle Color</label>
+   <input type="color" id="colorpicker_outer_circle" value="#000000"><br>
+   <label for="colorpicker">Set inner Circle Color</label>
+    <input type="color" id="colorpicker_inner_circle" value="#ffffff"><br>
+    <input type="text" id="input_upper_text" value="ANTIFASCHISTISCHE"><br>
+    <input type="text" id="input_down_text" value="AKTION"><br>
+
+    <label for="colorpicker">Set Text Color</label>
+    <input type="color" id="colorpicker_text" value="#ffffff"><br>
+  </div>
+
+  <script>
+  console.log(document.getElementById("colorpicker_outer_circle").value = "#000000")
+  console.log(document.getElementById("colorpicker_inner_circle").value = "#ffffff")
+  console.log(document.getElementById("colorpicker_text").value = "#ffffff")
+  ,console.log(document.getElementById("input_upper_text").value = "ANTIFASCHISTISCHE")
+  console.log(document.getElementById("input_down_text").value = "AKTION")
+  
+  document.getElementById('upper_text').style.top = "10px";
+  document.getElementById('down_text').style.bottom = "10px";
+
+ circleType = new CircleType(document.getElementById('upper_text'));
+circleType.radius(245).dir(1);
+ circleType = new CircleType(document.getElementById('down_text'));
+circleType.radius(240).dir(-1);
+//  console.log(document.getElementById("upper_text").setAttribute("x" ,250-(document.getElementById("upper_text").getComputedTextLength()/2)))
+//  console.log(document.getElementById("down_text").setAttribute("x" ,250-(document.getElementById("down_text").getComputedTextLength()/2)))
+document.getElementById("input_upper_text").addEventListener("input", function(){
+  document.getElementById("upper_text").innerHTML = document.getElementById("input_upper_text").value
+  circleType = new CircleType(document.getElementById('upper_text'));
+ circleType.radius(245).dir(1);
+
+});
+document.getElementById("input_down_text").addEventListener("input", function(){
+    document.getElementById("down_text").innerHTML = document.getElementById("input_down_text").value
+    circleType = new CircleType(document.getElementById('down_text'));
+   circleType.radius(240).dir(-1);
+});
+document.getElementById("colorpicker_outer_circle").addEventListener("input", function(){
+  console.log(document.getElementById("colorpicker_outer_circle").value)
+  document.getElementById("circle_out").style.background = document.getElementById("colorpicker_outer_circle").value
+});
+document.getElementById("colorpicker_inner_circle").addEventListener("input", function(){
+  console.log(document.getElementById("colorpicker_inner_circle").value)
+  document.getElementById("circle_in").style.background = document.getElementById("colorpicker_inner_circle").value
+});
+document.getElementById("colorpicker_text").addEventListener("input", function(){
+  console.log(document.getElementById("colorpicker_text").value)
+  document.getElementById("upper_text").style.color = document.getElementById("colorpicker_text").value
+  document.getElementById("down_text").style.color = document.getElementById("colorpicker_text").value
+});
+
+  </script>
+</body>
+
+</html>
