@@ -184,9 +184,11 @@ function add_event_lister() {
     document.getElementById("upper_text").style.color = document.getElementById("colorpicker_text").value
     document.getElementById("down_text").style.color = document.getElementById("colorpicker_text").value
   });
+  /*
   document.getElementById("reload_button").addEventListener("click", function() {
     load_images()
   });
+	*/
   document.getElementById("download_button").addEventListener("click", function() {
     document.getElementById("image_field").style.borderStyle = "none"
     html2canvas(document.querySelector("#image_field"), {
