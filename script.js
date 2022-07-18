@@ -60,7 +60,7 @@ xhttp.onreadystatechange = function() {
     console.log(this.responseURL)
   }
 };
-xhttp.open("GET", "/images/images.json", true);
+xhttp.open("GET", "./images/images.json", true);
 xhttp.withCredentials = true;
 xhttp.send();
 
