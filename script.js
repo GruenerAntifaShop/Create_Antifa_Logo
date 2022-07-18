@@ -151,6 +151,8 @@ function set_data_image(data) {
             }
           }
           data["position"][image_id][position] = document.getElementById(position_struc[position] + image_id).value
+          console.log(data)
+          load_images()
           set_data_image(data)
         }
       }(data, image_id, position))
