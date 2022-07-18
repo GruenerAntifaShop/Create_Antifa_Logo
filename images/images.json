@@ -1,0 +1,48 @@
+{
+  "images": [
+    {
+      "name": "flagge_rot_schwarz",
+      "files": ["images/flagge_gross_rot.png", "images/flagge_klein_schwarz.png"],
+      "position": [
+        [300, 350, 120, 65, 1],
+        [200, 230, 240, 65, 1]
+      ]
+    },
+    {
+      "name": "flagge_schwarz_schwarz",
+      "files": ["images/flagge_gross_schwarz.png", "images/flagge_klein_schwarz.png"],
+      "position": [
+        [300, 350, 120, 65, 1],
+        [200, 230, 240, 65, 1]
+      ]
+    },
+    {
+      "name": "flagge_rot_rot",
+      "files": ["images/flagge_gross_rot.png", "images/flagge_klein_rot.png"],
+      "position": [
+        [300, 350, 120, 65, 1],
+        [200, 230, 240, 65, 1]
+      ]
+    },
+    {
+      "name": "flagge_schwarz_rot",
+      "files": ["images/flagge_gross_schwarz.png", "images/flagge_klein_rot.png"],
+      "position": [
+        [300, 350, 120, 65, 1],
+        [200, 230, 240, 65, 1]
+      ]
+    },
+    {
+
+      "name": "flagge_schwarz_schwarz_flip",
+      "files": ["images/flagge_gross_schwarz.png", "images/flagge_klein_schwarz.png"],
+      "position": [
+        [300, 350, 120, 85, -1],
+        [200, 230, 240, 205, -1]
+      ]
+    }
+  ],
+  "config": {
+    "first": 0
+}
+}

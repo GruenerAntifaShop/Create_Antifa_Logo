@@ -1,41 +1,87 @@
-
-#image_field{
+body{
+max-width: 80%;
+display: flex;
+}
+#image_field {
   min-width: 500px;
   min-height: 500px;
   border-style: dotted;
   height: 500px;
   width: 500px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  float: left;
 }
 
 #circle_out {
-   width: 500px;
-   height: 500px;
-   border-radius: 250px;
-   background: black;
-   z-index: 0;
-   position: relative;
- }
+  width: 500px;
+  height: 500px;
+  border-radius: 250px;
+  background: black;
+  z-index: 0;
+  position: relative;
+}
 
- #circle_in {
-    width: 385px ;
-    height: 385px ;
-    border-radius: 250px;
-    background: white;
-    z-index: 1;
-    position: absolute;
-  }
+#circle_in {
+  width: 385px;
+  height: 385px;
+  border-radius: 250px;
+  background: white;
+  z-index: 1;
+  position: absolute;
+}
 
-.text_circle{
+.text_circle {
   position: absolute;
   color: white;
   z-index: 2;
-  font-size:40px;
-  font-weight:bold;
+  font-size: 50px;
+  font-weight: bold;
 }
 
-#controll_field{
+#mini_images_field {
+  display: flex;
+  max-width: 500px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height:fit-content;
+  border-style: dotted;
+}
+
+#circle_images {
+  z-index: 3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#controll_image_size {
+  border-style: dotted;
+  float: left;
+}
+
+.mini_images_div {
+  max-width: 75px;
+  max-height: 75px;
+  height: 75px;
+  width: 75px;
+  position: relative;
+  border-style: dashed;
+}
+
+.mini_images {
+  position: absolute;
+}
+
+.max_images {
+  position: absolute;
+}
+
+#controll_field {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-style: dotted;
 }
