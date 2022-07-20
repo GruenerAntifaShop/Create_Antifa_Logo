@@ -23,7 +23,13 @@ document.getElementById('image_picker').onchange = function(evt) {
   new_image = {
     "name": "",
     "files": [],
-    "files_position": []
+    "files_position": [],
+    "text": [
+      ["ANTIFASCHISTISCHE", 50, "bold", -5, 250, 245, 1, "#FFFFFF"],
+      ["AKTION", 50, "bold", 425, 250, 240, -1, "#FFFFFF"],
+      ["", 20, "bold", 250, 30, 360, 1, "#FFFFFF"],
+      ["", 20, "bold", 250, 470, 360, 1, "#FFFFFF"]
+    ]
   }
   if (window.File && window.FileList && window.FileReader) {
     var files = evt.target.files;
@@ -42,7 +48,7 @@ document.getElementById('image_picker').onchange = function(evt) {
     }
     JSON_IMAGES.push(new_image)
     console.log(JSON_IMAGES)
-    load_images()
+    load_mini_images(JSON_IMAGES.length - 1)
 
   }
 }
