@@ -1,48 +1,77 @@
 {
-  "images": [
-    {
+  "images": [{
       "name": "flagge_rot_schwarz",
       "files": ["images/flagge_gross_rot.png", "images/flagge_klein_schwarz.png"],
-      "position": [
+      "files_position": [
         [300, 350, 120, 65, 1],
         [200, 230, 240, 65, 1]
+      ],
+      "text": [
+        ["Beispiel", 50, "bold", -5, 250, 245, 1, "#0000FF"],
+        ["AKTION", 50, "bold", 425, 250, 240, -1, "#00FF00"],
+        ["AFA", 20, "bold", 250, 30, 360, 1, "#FF0000"],
+        ["161", 20, "bold", 250, 470, 360, 1, "#FFFFFF"]
       ]
     },
     {
       "name": "flagge_schwarz_schwarz",
       "files": ["./images/flagge_gross_schwarz.png", "./images/flagge_klein_schwarz.png"],
-      "position": [
+      "files_position": [
         [300, 350, 120, 65, 1],
         [200, 230, 240, 65, 1]
+      ],
+      "text": [
+        ["ANTIFASCHISTISCHE", 50, "bold", -5, 250, 245, 1, "#FFFFFF"],
+        ["AKTION", 50, "bold", 425, 250, 240, -1, "#FFFFFF"],
+        ["", 20, "bold", 250, 30, 360, 1, "#FFFFFF"],
+        ["", 20, "bold", 250, 470, 360, 1, "#FFFFFF"]
       ]
     },
     {
       "name": "flagge_rot_rot",
       "files": ["./images/flagge_gross_rot.png", "./images/flagge_klein_rot.png"],
-      "position": [
+      "files_position": [
         [300, 350, 120, 65, 1],
         [200, 230, 240, 65, 1]
+      ],
+      "text": [
+        ["ANTIFASCHISTISCHE", 50, "bold", -5, 250, 245, 1, "#FFFFFF"],
+        ["AKTION", 50, "bold", 425, 250, 240, -1, "#FFFFFF"],
+        ["", 20, "bold", 250, 30, 360, 1, "#FFFFFF"],
+        ["", 20, "bold", 250, 470, 360, 1, "#FFFFFF"]
       ]
     },
     {
       "name": "flagge_schwarz_rot",
       "files": ["./images/flagge_gross_schwarz.png", "./images/flagge_klein_rot.png"],
-      "position": [
+      "files_position": [
         [300, 350, 120, 65, 1],
         [200, 230, 240, 65, 1]
+      ],
+      "text": [
+        ["ANTIFASCHISTISCHE", 50, "bold", -5, 250, 245, 1, "#FFFFFF"],
+        ["AKTION", 50, "bold", 425, 250, 240, -1, "#FFFFFF"],
+        ["", 20, "bold", 250, 30, 360, 1, "#FFFFFF"],
+        ["", 20, "bold", 250, 470, 360, 1, "#FFFFFF"]
       ]
     },
     {
 
       "name": "flagge_schwarz_schwarz_flip",
       "files": ["./images/flagge_gross_schwarz.png", "./images/flagge_klein_schwarz.png"],
-      "position": [
+      "files_position": [
         [300, 350, 120, 85, -1],
         [200, 230, 240, 205, -1]
+      ],
+      "text": [
+        ["ANTIFASCHISTISCHE", 50, "bold", -5, 250, 245, 1, "#FFFFFF"],
+        ["AKTION", 50, "bold", 425, 250, 240, -1, "#FFFFFF"],
+        ["", 20, "bold", 250, 30, 360, 1, "#FFFFFF"],
+        ["", 20, "bold", 250, 470, 360, 1, "#FFFFFF"]
       ]
     }
   ],
   "config": {
     "first": 0
-}
+  }
 }

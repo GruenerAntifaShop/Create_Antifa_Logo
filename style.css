@@ -33,12 +33,14 @@ display: flex;
   position: absolute;
 }
 
+#image_field_text {
+
+  z-index: 3;
+
+}
 .text_circle {
   position: absolute;
   color: white;
-  z-index: 2;
-  font-size: 50px;
-  font-weight: bold;
 }
 
 #mini_images_field {
@@ -51,7 +53,7 @@ display: flex;
 }
 
 #circle_images {
-  z-index: 3;
+  z-index: 2;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -80,8 +82,12 @@ display: flex;
 }
 
 #controll_field {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   border-style: dotted;
+  display: contents;
+}
+#text_inputs div{
+display: flex;
+}
+#text_inputs div input{
+width: 150px;
 }
