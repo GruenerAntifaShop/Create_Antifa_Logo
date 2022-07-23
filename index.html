@@ -24,8 +24,10 @@
 -->
 	<div>
 		<div id="image_field" height="500" width="500">
-			<div id="circle_out"></div>
-			<div id="circle_in"></div>
+			<div style="z-index: 0;position: absolute;left: 0px;top: 0px;">
+				<div class="circles" id="circle_out"  style="z-index: 1;width: 500px; height: 500px; background-color:#000000"></div>
+				<div class="circles" id="circle_in" style="z-index: 2;width:385px; height:385px; left:60px;top:60px; background-color:#ffffff"></div>
+			</div>
 			<div id="circle_images"></div>
 			<div id="image_field_text"></div>
 
@@ -38,9 +40,9 @@
 
 		<div id="controll_field">
 			<label for="colorpicker">Set outer Circle Color:
-			<input type="color" id="colorpicker_outer_circle" value="#000000"></label><br>
+				<input type="color" id="colorpicker_outer_circle" value="#000000"></label><br>
 			<label for="colorpicker">Set inner Circle Color:
-			<input type="color" id="colorpicker_inner_circle" value="#ffffff"></label><br>
+				<input type="color" id="colorpicker_inner_circle" value="#ffffff"></label><br>
 
 			<div id="text_inputs">
 			</div>

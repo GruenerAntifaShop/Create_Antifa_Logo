@@ -15,33 +15,33 @@ display: flex;
   float: left;
 }
 
-#circle_out {
-  width: 500px;
-  height: 500px;
-  border-radius: 250px;
-  background: black;
-  z-index: 0;
-  position: relative;
-}
 
-#circle_in {
-  width: 385px;
-  height: 385px;
+.circles {
   border-radius: 250px;
   background: white;
-  z-index: 1;
+  z-index: 0;
   position: absolute;
+}
+
+
+#circle_images {
+  z-index: 4;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 #image_field_text {
-
-  z-index: 3;
-
+  z-index: 100;
 }
+
 .text_circle {
   position: absolute;
   color: white;
+    z-index: 100;
 }
+
+
 
 #mini_images_field {
   display: flex;
@@ -52,12 +52,7 @@ display: flex;
   border-style: dotted;
 }
 
-#circle_images {
-  z-index: 2;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
+
 
 #controll_image_size {
   border-style: dotted;
